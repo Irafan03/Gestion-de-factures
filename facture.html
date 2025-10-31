@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Facture</title>
+</head>
+<body>
+    <div class="container">
+        <div class="facture-card">
+            <h3>Facture</h3>
+            <table id="listeFacture">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Référence</th>
+                        <th>Quantité</th>
+                        <th>Prix Unitaire</th>
+                        <th>Total</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+            <div class="inputs">
+                <input type="text" id="ref" placeholder="Référence">
+                <input type="number" id="qnt" placeholder="Quantité" min="1">
+                <input type="number" id="pu" placeholder="Prix unitaire" step="0.01" min="0">
+                <p id="total">Total : 0</p>
+            </div>
+        </div>
+
+        <div class="actions-card">
+            <button id="addBtn">Ajouter</button>
+            <button id="filterBtn">Filtrer</button>
+            <button id="modifyBtn">Modifier</button>
+            <button id="deleteBtn">Supprimer</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
